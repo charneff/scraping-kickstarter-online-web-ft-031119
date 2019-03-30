@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 require 'nokogiri'
 require 'pry'
@@ -20,4 +21,14 @@ def create_project_hash
  
   # return the projects hash
   projects
+=======
+# require libraries/modules here
+require 'Nokogiri'
+
+def create_project_hash
+  html = File.read('fixtures/kickstarter.html')
+  
+  kickstarter = Nokogiri::HTML(html)
+  # write your code here
+>>>>>>> 19fc7f6fb3dbdaf115eaefe1216d6fe31a9a8d68
 end
